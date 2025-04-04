@@ -1,0 +1,53 @@
+{
+  "name": "thoughts",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "tsup src --out-dir build",
+    "dev": "tsx watch ./src/index.ts",
+    "lint": "pnpm biome lint .",
+    "lint:fix": "pnpm biome lint --apply .",
+    "lint:fix:force": "pnpm biome lint --apply-unsafe .",
+    "start": "tsx ./build/index.js ",
+    "test": "pnpm exec vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "César Hilário",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "1.6.8",
+    "bcrypt": "5.1.1",
+    "connect-flash": "0.1.1",
+    "cookie-parser": "1.4.7",
+    "cookie-session": "2.1.0",
+    "date-fns": "4.1.0",
+    "dotenv": "16.4.5",
+    "express": "5.1.0",
+    "express-flash": "0.0.2",
+    "express-handlebars": "8.0.1",
+    "express-session": "1.18.1",
+    "mongoose": "8.8.4",
+    "mysql2": "3.14.0",
+    "redis": "4.7.0",
+    "resend": "4.0.1",
+    "sequelize": "6.37.7",
+    "session-file-store": "1.5.0",
+    "zod": "3.23.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@types/bcrypt": "5.0.2",
+    "@types/express": "5.0.1",
+    "@types/express-flash": "0.0.5",
+    "@types/express-session": "1.18.1",
+    "@types/node": "20.12.7",
+    "@types/session-file-store": "1.2.5",
+    "@vitest/coverage-v8": "2.1.1",
+    "sinon": "17.0.1",
+    "tsup": "8.0.2",
+    "tsx": "4.7.3",
+    "typescript": "5.4.5",
+    "vitest": "2.1.1"
+  }
+}
